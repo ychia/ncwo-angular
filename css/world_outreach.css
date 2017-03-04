@@ -1,0 +1,102 @@
+/* world outreach page specific */
+#nav_content {
+  width: 1000px; 
+  float: none; 
+  background: #DDCEAB; 
+  padding: 0; 
+  overflow: hidden;
+}
+.box {
+  text-align: center; 
+}
+#wo_banner {
+  position: relative;
+  background-image: url('../img/old_banner.jpeg');
+  background-repeat: no-repeat;
+  height: 202px;
+  width: 800px;
+  margin: auto;
+}
+#wo_banner h1 {
+  padding-top: 30px;
+  font-style: italic;
+  font-size: 70px;
+}
+.logo_center {
+  width: 542px;
+  height: 135px;
+  margin: 0 auto 25px auto;
+  background-image: url('../img/ncwo-small.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.lines_outer_l {
+  width: 250px;
+  height: 62px;
+  border-top: 5px solid #241A70;
+  border-bottom: 5px solid #241A70;
+  position: absolute;
+  top: 25px;
+  left: 237px;
+}
+.lines_outer_r {
+  width: 264px;
+  height: 62px;
+  border-top: 5px solid #241A70;
+  border-bottom: 5px solid #241A70;
+  position: absolute;
+  top: 25px;
+  right: 222px;
+}
+.lines_inner_l {
+  width: 237px;
+  height: 42px;
+  border-top: 5px solid #241A70;
+  border-bottom: 5px solid #241A70;
+  position: absolute;
+  top: 35px;
+  left: 237px;
+}
+.lines_inner_r {
+  width: 252px;
+  height: 42px;
+  border-top: 5px solid #241A70;
+  border-bottom: 5px solid #241A70;
+  position: absolute;
+  top: 35px;
+  right: 222px;
+}
+.letters_left {
+  position: absolute;
+  top: 40px;
+  left: 240px;
+  font-size: 36px;
+  color: #7E0036;
+  font-family: "times, times new roman";
+}
+.letters_right {
+  position: absolute;
+  top: 40px;
+  right: 220px;
+  font-size: 36px;
+  color: #7E0036;
+  font-family: "times, times new roman";
+}
+.world_outreach #nav_links ul {
+  height: 100px;
+}
+.world_outreach #nav_links ul li {
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 95px;
+  display: inline;
+  border-radius: 4px;
+}
+.world_outreach .subcontent_selected {
+  background-color: #999;
+  color: white !important;
+}
+.world_outreach #nav_links ul li p {
+  font-size: 12px;
+}

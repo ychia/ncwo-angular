@@ -1,0 +1,19 @@
+/* gallery */
+#pics {
+  margin-top: 45px;
+}
+.picasa_back {
+  line-height: 5em;
+  font-weight: bold;
+  color: #8E3D0E;
+  font-size: 30px;
+}
+p {
+  color: #8E3D0E;
+}
+.album-title {
+  color: #8E3D0E;
+}
+.album h3 {
+  color: #8E3D0E;
+}

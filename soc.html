@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="X-UA-Compatible" value="IE=8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<html lang="en-US">
+<head>
+
+<title>New Covenant Christian Center, International: School of Christ</title>
+<meta name="Keywords" content="new,covenant,christian,center,world,outreach,philippines,kenya,bible,kjv,school,christ"/>
+<meta name="Description" content="New Covenant Christian Center School of Christ: raising and training disciples for the work of ministry."/>
+<link rel="stylesheet" href="css/demo_table.css" type="text/css" media="print, projection, screen" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="js/nccc.js?v=7"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/global.css?v=249">
+
+<include-global></include-global>
+
+<link rel="stylesheet" type="text/css" href="css/soc.css"/>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+
+
+
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="js/jquery.dataTables.date.js"></script>
+
+<script type="text/javascript">
+  function playTrack(name) {
+    $("#jquery_jplayer_1").jPlayer('destroy');
+
+    $("#jquery_jplayer_1").jPlayer({
+      ready: function (event) {
+        ready = true;
+        $('#jp_container_1').css('visibility','visible');
+        $(this).jPlayer("setMedia", {mp3: name}).jPlayer("play");
+      },
+      swfPath: "/js",
+      solution:"flash,html",
+      supplied: "mp3",
+      preload: "none",
+      wmode: "window",
+      keyEnabled: true
+    });
+  }
+  $(document).ready(function() {
+    setTimeout(function() {
+     $("#soc_recordings table").dataTable({"aaSorting": [[ 3, "desc" ]], "aoColumns": [null, null, null, { "sType": 'title-date' }]});
+   },500);
+  });
+</script>
+
+
+
+
+</head>
+<body ng-app="nccc">
+	<div id="main" style="text-align: center;">
+		<include-nav></include-nav>
+    <div class="jumbotron" style="padding-bottom: 30px; margin-bottom: 0;">
+        <div class="container">
+          <h1 style="font-size: 36px;" class="text-center">The School of Christ</h1>
+        </div>
+    </div>
+		
+		<div class="clearfix"></div>
+
+		<div id="featured_recordings">
+      
+      <div id="soc_banner" class="box" style="background-image: none;">
+        <img style="margin-right: 65px;" src="img/soc.jpg"/>
+        <img src="img/tabernacle.jpg">
+        <div class="clearfix" style="height: 20px; width: 100%"></div>
+        <strong style="float: left;">"Boldness - They had been with Jesus" -Acts 4:13</strong>
+        <strong style="float: right; margin-right: 150px;">"The Church in the Wilderness" -Acts 7:38</strong>
+      </div>
+
+      </br>
+      <div id="soc_material">
+        <div id="soc_notebooks">
+          <h2>SOC Notebooks:</h2>
+
+         </br>
+          <a target="_blank" href="content/soc-1.pdf"><img style="margin: 0;" src="img/pdf_icon.gif"/>Notebook 1</a>
+          <a class="clearfix" target="_blank" href="content/soc-2.pdf"><img style="margin: 0;" src="img/pdf_icon.gif"/>Notebook 2</a>
+          <a target="_blank" href="content/soc-3.pdf"><img style="margin: 0;" src="img/pdf_icon.gif"/>Notes - Fasting</a>
+          <a class="clearfix" target="_blank" href="content/soc-4.pdf"><img style="margin: 0;" src="img/pdf_icon.gif"/>Notes - Spirit World</a>
+          <a class="clearfix" target="_blank" href="content/soc-5.pdf"><img style="margin: 0;" src="img/pdf_icon.gif"/>Notes - Faith</a>
+          <a class="clearfix" target="_blank" href="content/soc-6.pdf"><img style="margin: 0;" src="img/pdf_icon.gif"/>Notes - Baptisms</a>
+          <a class="clearfix" target="_blank" href="content/wrongsideofthecross_edit.pdf"><img style="margin: 0;" src="img/pdf_icon.gif"/>Notes - Wrong Side of the Cross</a>
+        </div>
+        <div class="clearfix"></div>
+
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+        <div id="jp_container_1" style="margin: auto; visibility: hidden;" class="jp-audio">
+      <div class="jp-type-single">
+        <div class="jp-gui jp-interface">
+          <ul class="jp-controls">
+            <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+            <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+            <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+            <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+          </ul>
+          <div class="jp-progress">
+            <div class="jp-seek-bar">
+              <div class="jp-play-bar"></div>
+            </div>
+          </div>
+          <div class="jp-volume-bar">
+            <div class="jp-volume-bar-value"></div>
+          </div>
+          <div class="jp-time-holder">
+            <div class="jp-current-time"></div>
+            <div class="jp-duration"></div>
+
+            <ul class="jp-toggles">
+              <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+              <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="jp-no-solution">
+          <span>Update Required</span>
+          To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+      </div>
+    </div>
+
+        <div id="soc_recordings">
+           <include-soc></include-soc>
+        </div>
+      </div>
+
+
+		</div>
+		
+		<div class="clearfix"></div>
+	</div>
+
+
+
+<include-footer></include-footer>
+
+</body>
+
+
+</html>

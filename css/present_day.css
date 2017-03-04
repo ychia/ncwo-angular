@@ -1,0 +1,152 @@
+/* present day truth page specific */
+.present_day_truth #nav_links {
+  float: left;
+  width: 250px;
+}
+.present_day_truth #nav_links ul li {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.present_day_truth #nav_links ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.present_day_truth #nav_links ul li:first-child {
+  border-top: 1px solid #ccc;
+}
+.present_day_truth h2 {
+  color: black !important;
+  text-shadow: none !important;
+}
+/* wide format nav override */
+#main #nav {
+  margin-left: 100px;
+}
+
+/* sword magazine content */
+.sword_content {
+  width: 900px;
+  background-color: white;
+}
+.sword_content p {
+  font-size: 18px;
+}
+.sword_header {
+  text-align: center;
+  margin: auto;
+  color: #364933;
+}
+.sword_header h1 {
+  font-size: 120px !important;
+  margin: 0;
+  font-weight: normal;
+  background-image: url('/img/sword.png');
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+  height: 220px;
+}
+.sword_subheader {
+  border-bottom: 3px solid #364933;
+  height: 30px;
+  margin: 15px;
+}
+.sword_title {
+  font-weight: bold;
+  width: 500px;
+  margin: auto;
+}
+.sword_title h2 {
+  font-size: 42px;
+  font-weight: normal;
+  margin: 0;
+}
+.sword_title em {
+  margin-left: 200px;
+  font-size: 24px;
+}
+.sword_subheader p {
+  text-align: left;
+  float: left;
+  margin: 10px 0;
+}
+.sword_subheader span {
+  text-align: right;
+  float: right;
+  margin: 10px 0;
+}
+.sword_sidebox {
+  float: right;
+  margin: 10px;
+  border: 1px solid #7B0003;
+  background: #FBFFD1;
+}
+.sword_sidebox p {
+  margin: 10px;
+}
+.sword_text {
+  margin: 10px;
+}
+.sword_left {
+  width: 65%;
+  float: left;
+}
+.sword_right {
+  width: 34%;
+  float: left;
+}
+.sword_left p {
+  margin: 10px;
+}
+
+#nav_content {
+  float: left;
+  width: 920px;
+  overflow: scroll;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+#nav_content div h3{
+  margin: 0;
+}
+
+/* Sub-section nav generic */
+#nav_links ul {
+  padding: 0;
+  list-style: none;
+}
+#nav_links ul li {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+}
+#nav_content {
+  float: left;
+  width: 920px;
+  overflow: scroll;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+#nav_content div h3{
+  margin: 0;
+}
+
+/* buttons and other sugar */
+.selected {
+  color: black !important;
+  cursor: default !important;
+}
+.subcontent_selected {
+  color: black !important;
+  font-weight: bold;
+  background-color: white;
+}
+
+.sword_subheader {
+  height: 40px;
+}
+
+.hidden {
+  display: none;
+}

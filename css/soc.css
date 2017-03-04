@@ -1,0 +1,45 @@
+#featured_recordings > div {
+  font-size: 12px;
+  text-align: left;
+}
+
+#featured_recordings img {
+  float: left;
+}
+
+#soc_material {
+  width: 970px;
+  margin: auto;
+}
+#soc_banner {
+  width: 870px;
+  height: 350px;
+  margin: auto;
+}
+#soc_banner img {
+  max-height: 330px;
+}
+
+#soc_notebooks a {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #761506;
+}
+
+.soc_header {
+  background-image: url('/img/sword.png');
+  background-repeat: no-repeat;
+  background-position: 60px 30px;
+  width: 1000px;
+  height: 170px;
+  overflow: visible;
+}
+
+table {
+  width: 100%;
+  clear: both;
+}
+
+#table_soc {
+  width: 100%;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="X-UA-Compatible" value="IE=8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<html lang="en-US">
+<head>
+
+<title>New Covenant Christian Center, International: Audio Ministry</title>
+<meta name="Keywords" content="new,covenant,christian,center,world,outreach,philippines,kenya,bible,kjv,audio,ministry"/>
+<meta name="Description" content="New Covenant Christian Center audio teachings: bringing the truth of God's word to the world."/>
+<link rel="stylesheet" href="css/demo_table.css" type="text/css" media="print, projection, screen" />
+
+<!--#include virtual="js-includes.html" -->
+
+<link rel="stylesheet" type="text/css" href="css/audio.css"/>
+
+<script type="text/javascript" src="http://mediaplayer.yahoo.com/latest">
+    /* This will include the yahoo media player on the page */
+</script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script> 
+
+
+
+<script type="text/javascript">
+
+    var yahoo_ready = false;
+
+    YAHOO.MediaPlayer.onAPIReady.subscribe(function(){
+      yahoo_ready = true;
+    });
+
+    function addFridayFiles() {
+        console.log(document.getElementById('table_fridays'));
+        document.getElementById('playlist').innerHTML = '<a href="http://mediaplayer.yahoo.com/example3.mp3" style="display:none;"> linky blinky </a>';
+        YAHOO.MediaPlayer.addTracks(document.getElementById('playlist'), 0, true);
+        YAHOO.MediaPlayer.play();
+        //YAHOO.MediaPlayer.addTracks(document.getElementById('table_fridays'), null, true);
+    }
+
+    function addSundayFiles() {
+        YAHOO.MediaPlayer.addTracks(document.getElementById('table_sundays'), null, true);
+    }
+
+    /*var apiReadyHandler = function ()
+    {
+        // Once API ready handler is invoked, YAHOO.MediaPlayer class can be accessed safely
+        // For example: Add other event listeners 
+        YAHOO.MediaPlayer.onPlaylistUpdate.subscribe(onPlaylistUpateHandler)
+    }*/
+
+    /*var onPlaylistUpateHandler = function (playlistArray)
+    {
+        $("#friday_recordings table").dataTable({"aaSorting": [[ 2, "desc" ]], "fnDrawCallback": function( oSettings ) {
+            //YAHOO.MediaPlayer.addTracks($("#friday_recordings table"));
+        }});
+        $("#sunday_recordings table").dataTable({"aaSorting": [[ 2, "desc" ]], "fnDrawCallback": function( oSettings ) {
+            //YAHOO.MediaPlayer.addTracks($("#sunday_recordings table"));
+        }});
+        
+    }*/
+
+    //YAHOO.MediaPlayer.onAPIReady.subscribe(apiReadyHandler);
+
+    $(document).ready(function() {
+
+        // callback example
+        $("#table_fridays").dataTable({"aaSorting": [[ 2, "desc" ]], "fnDrawCallback": function( oSettings ) {
+            //addTracks
+            console.log('add friday');
+            if (yahoo_ready) {
+                addFridayFiles(); 
+            }
+            
+        }});
+        $("#table_sundays").dataTable({"aaSorting": [[ 2, "desc" ]], "fnDrawCallback": function( oSettings ) {
+            //addTracks
+            console.log('add sunday');
+            if (yahoo_ready) {
+                addSundayFiles();
+            }
+            
+        }});
+        /*$("#friday_recordings table").dataTable( {
+            "aaSorting": [[ 2, "desc" ]],
+            "sScrollY": "200px",
+            "bScrollCollapse": true,
+            "bPaginate": false,
+            "bJQueryUI": true,
+            "aoColumnDefs": [
+                { "sWidth": "10%", "aTargets": [ -1 ] }
+            ]
+        } );
+        $("#sunday_recordings table").dataTable( {
+            "aaSorting": [[ 2, "desc" ]],
+            "sScrollY": "200px",
+            "bScrollCollapse": true,
+            "bPaginate": false,
+            "bJQueryUI": true,
+            "aoColumnDefs": [
+                { "sWidth": "10%", "aTargets": [ -1 ] }
+            ]
+        } );*/
+    });
+</script>
+
+
+
+
+</head>
+<body>
+    <div id="playlist"></div>
+	<div id="main" style="text-align: center;">
+		<!--#include virtual="nav.html" -->
+		<h1>New Covenant Audio Ministry</h1>
+
+    <img src="img/sword2.png"/>
+
+    <h2 style="color: #CD2B27">Kingdom Preaching to the Nations</h2>
+
+    <h3 style="color: #CD2B27">So then faith cometh by hearing, and hearing by the word of God. - Rom 10:17</h3>
+
+		<div id="friday_recordings">
+			<h2>Friday Services</h2>
+
+            <!--#include virtual="friday.html"-->
+		</div>
+
+		<div id="sunday_recordings">
+
+			<h2>Sunday Services</h2>
+
+			<!--#include virtual="sunday.html"-->
+
+		</div>
+
+		<div class="clearfix"></div>
+    <div class="external_link_wc">
+      <h2>External Links:</h2>
+      <img src="img/logo_worldchallenge-1.gif"/>
+      <p>David Wilkerson Sermons</p>
+    </div>
+	</div>
+
+  <div id="wc_audio_popup" style="display: none;">
+    <a target="_blank" href="http://worldchallenge.edgeboss.net/download/worldchallenge/sermons/audio/0305-london-4.mp3">A Call to Anguish" -- David Wilkerson</a></br>
+    <a target="_blank" href="http://worldchallenge.edgeboss.net/download/worldchallenge/sermons/audio/0403-lusaka-3.mp3">"The Cry of Sodom and Gomorrah"--David Wilkerson</a></br>
+    <a target="_blank" href="http://worldchallenge.edgeboss.net/download/worldchallenge/sermons/audio/0701_domrep_7_dw.mp3">"That Dreadful Day No One Wants to Talk About"--David Wilkerson</a></br>
+    <a target="_blank" href="http://worldchallenge.edgeboss.net/download/worldchallenge/sermons/audio/060820_tsc_dw.mp3">"The Great and Final Apostasy"--David Wilkerson</a></br>
+    <a target="_blank" href="http://worldchallenge.edgeboss.net/download/worldchallenge/sermons/audio/070204_tsc_dw.mp3">"A Target of Satan's Envy"--David Wilkerson</a></br>
+    <a target="_blank" href="http://media.sermonindex.net/0/SID0319.mp3">"Hell"--David Wilkerson  Part 1</a></br>
+    <a target="_blank" href="http://media.sermonindex.net/0/SID0320.mp3">"Hell"--David Wilkerson  Part  2</a>
+  </div>
+
+
+<!--#include virtual="footer.html" -->
+
+</body>
+
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="X-UA-Compatible" value="IE=8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<html lang="en-US">
+<head>
+  
+<title>New Covenant World Outreach: Gallery</title>
+<meta name="Keywords" content="new,covenant,christian,center,world,outreach,philippines,kenya,bible,donate,charity,gallery"/>
+<meta name="Description" content="New Covenant World Outreach - Gallery: a Sampling of Ministry in the Nations"/>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="js/nccc.js?v=7"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/global.css?v=249">
+
+<include-global></include-global>
+
+<link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/slimbox2.js"></script>
+<script type="text/javascript" src="js/jquery.EmbedPicasaGallery.js?v=1"></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+ jQuery("#pics").EmbedPicasaGallery('yujinchia',{
+    matcher: /./,
+    msg_loading_list :  'Loading Album List',
+    msg_back : '<span class="picasa_back">Return</span>',
+    size: 190,
+    loading_animation: 'img/loading.gif',
+    album_title_tag:    '<h3/>'
+ });
+})
+</script>
+</head>
+<body ng-app="nccc">
+  <div id="main">
+    <include-nav></include-nav>
+
+    <div class="center-block" style="width: 1000px;">
+
+        <h1>Catch a Glimpse of the Vision</h1>
+
+        <h2>Picture Albums</h2>
+        <p>Click a thumbnail to load an album or start a slideshow.</p>
+
+        <div id="pics"></div>
+
+        <div id="movies">
+            <h2>Videos</h2>
+            <iframe width="480" height="375" src="http://www.youtube.com/embed/XyqTtD1IzxQ" frameborder="0" allowfullscreen></iframe>
+            <iframe style="margin-left: 30px;" width="480" height="375" src="http://www.youtube.com/embed/QrLTtK_4i9Y" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+  </div>
+  <include-footer></include-footer>
+  
+</body>
+</html>

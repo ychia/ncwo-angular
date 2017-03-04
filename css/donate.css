@@ -1,0 +1,63 @@
+
+/* donate page */
+.clearfix {
+  height: 10px;
+}
+.donate_banner {
+  width: 750px;
+  margin: auto;
+  padding: 50px;
+}
+.donate_banner img {
+  max-width: 350px;
+  float: left;
+}
+.donate_banner .textblock {
+  float: left;
+  padding: 10px;
+  margin: 20px 10px;
+  line-height: 1em;
+  border: 1px solid #7B0003;
+  background: #FBFFD1;
+  width: 300px;
+}
+.donate_banner strong {
+  width: 350px;
+  font-size: 12px;
+  line-height: 1em;
+}
+.donate_notice {
+  width: 200px; 
+  text-align: center; 
+  margin: auto
+}
+.projects img {
+  margin: 10px 15px;
+}
+.left_col, .right_col {
+  margin-top: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.left_col img, .right_col img {
+  padding: 20px 0;
+  max-height: 640px;
+}
+.paypal_btn {
+  width: 200px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+#paypal_directions {
+  color: #8E3D0E;
+  text-shadow: 1px 1px 0px #F19E2C;
+  cursor: pointer;
+}
+#paypal_popup {
+  font-size: 12px;
+}
+
+.box {
+  width: 750px;
+}
